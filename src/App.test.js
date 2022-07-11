@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 import { server } from "./mocks/server";
 import "mutationobserver-shim";
@@ -11,11 +11,10 @@ afterEach(() => {
   document.body.innerHTML = "";
 });
 
-describe("<App />, Review creating a React component, using JavaScript modules to export and import components, using the useState and useEffect hooks to fetch and manage your data, handling side effects, and passing props.", () => {
+describe("<App />, Review creating a React component, using JavaScript modules to export and import components, using the useState and useEffect hooks to fetch and manage your data, handling side effects, and passing props." , () => {
   test("[2] Luke Skywalker eventually appears in the DOM", async () => {
     render(<App />);
     expect(screen.queryByText(/Luke/i)).not.toBeInTheDocument();
-    await waitFor(() => {});
     expect(await screen.findByText(/Luke/i)).toBeInTheDocument();
   });
   test("[3] C-3PO eventually appears in the DOM", async () => {
