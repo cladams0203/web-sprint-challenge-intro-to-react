@@ -8,7 +8,6 @@ export default function Character(props) {
   return (
     <div>
       <h3>{name}</h3>
-      <p>Car Data</p>
     </div>
   );
 }
