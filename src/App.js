@@ -22,11 +22,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characterss</h1>
-      <div>
-        {characters.map((c, idx) => (
-          <Character key={idx} character={c} />
-        ))}
-      </div>
+      {characters.map((c, idx) => (
+        <Character key={idx} character={c} />
+      ))}
     </div>
   );
 };
