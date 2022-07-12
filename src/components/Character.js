@@ -3,11 +3,12 @@
 import React from "react";
 
 export default function Character(props) {
-  const { name } = props.character;
+  const { name, height } = props.character;
   console.log(props);
   return (
     <div>
-      <h3>{name}</h3>
+      <p>{name}</p>
+      <p>Height: {height}</p>
     </div>
   );
 }
