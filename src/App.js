@@ -21,7 +21,7 @@ const App = () => {
   }, []);
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Characterss</h1>
       <div>
         {characters.map((c, idx) => (
           <Character key={idx} character={c} />
