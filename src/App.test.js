@@ -18,34 +18,4 @@ describe("<App />, Review creating a React component, using JavaScript modules t
     // expect(await screen.findByText(/Luke/i)).toBeInTheDocument();
     expect(true).toBe(true);
   });
-  test("[3] C-3PO eventually appears in the DOM", async () => {
-    // render(<App />);
-    // expect(screen.queryByText(/3PO/i)).not.toBeInTheDocument();
-    // expect(await screen.findByText(/3PO/i)).toBeInTheDocument();
-    expect(true).toBe(true);
-  });
-  test("[4] R2-D2 eventually appears in the DOM", async () => {
-    // render(<App />);
-    // expect(screen.queryByText(/R2/i)).not.toBeInTheDocument();
-    // expect(await screen.findByText(/R2/i)).toBeInTheDocument();
-    expect(true).toBe(true);
-  });
-  test("[5] Darth Vader eventually appears in the DOM", async () => {
-    // render(<App />);
-    // expect(screen.queryByText(/Vader/i)).not.toBeInTheDocument();
-    // expect(await screen.findByText(/Vader/i)).toBeInTheDocument();
-    expect(true).toBe(true);
-  });
-  test("[6] Leia Organa eventually appears in the DOM", async () => {
-    // render(<App />);
-    // expect(screen.queryByText(/Leia/i)).not.toBeInTheDocument();
-    // expect(await screen.findByText(/Leia/i)).toBeInTheDocument();
-    expect(true).toBe(true);
-  });
-  test("[7] Owen Lars eventually appears in the DOM", async () => {
-    // render(<App />);
-    // expect(screen.queryByText(/Owen/i)).not.toBeInTheDocument();
-    // expect(await screen.findByText(/Owen/i)).toBeInTheDocument();
-    expect(true).toBe(true);
-  });
 });
