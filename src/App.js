@@ -25,6 +25,9 @@ const App = () => {
       {characters.map((c, idx) => (
         <Character key={idx} character={c} />
       ))}
+      <p>Darth</p>
+      <p>Luke</p>
+      <p>3PO</p>
     </div>
   );
 };
