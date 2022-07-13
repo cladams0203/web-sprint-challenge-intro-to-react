@@ -13,9 +13,10 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("https://swapi.dev/api/people")
+      .get("https://swapi.dev/api/people/")
       .then((res) => {
-        setCharacters(res.data.results);
+        console.log(res);
+        setCharacters(res.data);
       })
       .catch((err) => console.log({ err }));
   }, []);
@@ -25,13 +26,6 @@ const App = () => {
       {characters.map((c, idx) => (
         <Character key={idx} character={c} />
       ))}
-      {characters.length && (
-        <div>
-          <p>Darth</p>
-          <p>Luke</p>
-          <p>3PO</p>
-        </div>
-      )}
     </div>
   );
 };
